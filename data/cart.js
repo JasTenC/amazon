@@ -10,8 +10,8 @@ export function addToCart(productId) {
     let matchingItem;
 
         cart.forEach((cartItem) =>{
-            if(productId === CartItem.productId){
-                matchingItem = CartItem;
+            if(productId === cartItem.productId){
+                matchingItem = cartItem;
             }
         });
 
