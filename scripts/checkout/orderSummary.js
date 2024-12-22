@@ -9,18 +9,13 @@ const today = dayjs();
 const deliveryDate = today.add(7, 'days');
 deliveryDate.format('dddd, MMMM D');
 
-console.log(deliveryDate);
 
 export function renderOrderSuammary() {
     let cartSummaryHTML = ``;
     cart.forEach((cartItem) =>{
         const productId = cartItem.productId;
 
-        console.log(productId);
-
         const matchingProduct = getProductBy(productId);
-
-        console.log(matchingProduct);
 
         const deliveryOptionId = cartItem.deliveryOptionId;
 
